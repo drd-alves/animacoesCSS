@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        canvas{
+            border: solid salmon 3px;
+            background-color: paleturquoise;
+        }
+
+    </style>
+</head>
+<body>
+
+    <canvas width="500px" height="500px" id="quadro"></canvas>
+    
+    <script>
+    
+        var quadro = document.getElementById("quadro")
+
+        if(quadro.getContext){
+            var ctx = quadro.getContext("2d")
+            
+            ctx.fillStyle="salmon"
+            ctx.fillRect(30,30,200,100)
+        }
+        else{
+            alert("Navegadro não suporta!")
+        }
+    </script>
+    
+</body>
+</html>

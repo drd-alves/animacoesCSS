@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #quadro{
+            border: 2px solid black;
+            background-color:paleturquoise;
+            opacity: 60%;
+            
+            
+        }
+    </style>
+</head>
+<body>
+
+    <canvas width="300" height="200" id="quadro">pipip</canvas>
+    
+    <script>
+
+        //desenhando no canvas
+        var canvas=document.getElementById("quadro")
+        
+        //verificando se o navegador suporta ele
+        if(canvas.getContext){
+            var contexto = canvas.getContext("2d")
+
+            contexto.beginPath() //Avsiando que vou começar o desenho
+            contexto.moveTo(50,30)
+            contexto.lineTo(250,150)
+            contexto.moveTo(50,30)
+            contexto.lineTo(200,80)
+            contexto.stroke()
+
+        }
+        else{
+            alert("Navegador não suporta canvas")
+        }
+        
+        
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        
+        button:hover {
+            /* button hover = pseudoelemento */
+            background-color: palegoldenrod;
+        }
+
+        #lista:first-line{
+            color: palegreen;
+        }
+
+        #lista:last-child{
+            color: palevioletred;
+        }
+        p:first-child i{
+            color: peru;
+        }
+
+        p:nth-child(2) i{
+            color: salmon;
+        }
+
+        p:last-child i{
+            color: plum;
+        }
+
+        input[type="password"]{
+            color: green;
+        }
+
+        input[type="submit"]{
+            color: slateblue;
+            background-color: springgreen;
+            border-radius: 5px;
+            border: 1px black dotted;
+        }
+
+        input[type="submit"]:hover{
+            color: slateblue;
+            background-color: yellow;
+            border-radius: 5px;
+            border: 1px black dotted;
+        }
+    </style>
+</head>
+<body>
+
+    <ul id="lista">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ul>
+    <br>
+    <div>
+        <p>Lorem ipsum <i>dolor sit amet consectetur</i> adipisicing elit. Consequatur animi deleniti tempora quis eligendi harum rerum sed laborum, ab maiores fugiat repudiandae dignissimos, vero ducimus, distinctio quae repellat labore ut!</p>
+        <p>Lorem ipsum <i>dolor sit amet consectetur</i> adipisicing elit. Sapiente nostrum delectus suscipit reiciendis sequi rem ea consequatur officia ratione impedit! Alias, itaque assumenda voluptatibus corporis ex possimus distinctio magnam nemo?</p>
+        <p>Lorem ipsum <i>dolor sit amet consectetur</i> adipisicing elit. Nisi asperiores deserunt atque rerum earum quidem! Dicta alias quos error incidunt tempora dolores, vel, sequi expedita odio suscipit possimus, vitae quod?</p>
+    </div>
+    <button>Click here</button>
+
+    <br><br>
+
+    <form action="#" method="GET">
+        <label for="">Nome</label>
+        <input type="text">
+        <br>
+        <label for="">Password</label>
+        <input type="password">
+        <label for="">Confirmar password</label>
+        <input type="password">
+        <br><br>
+        <input type="submit">
+    </form>
+    
+</body>
+</html>
